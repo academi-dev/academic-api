@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: academic_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: academic_user
+      POSTGRES_PASSWORD: academic_password
+      POSTGRES_DB: academic_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U academic_user -d academic_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    networks:
+      - academic_network
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: academic_api_service
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://academic_user:academic_password@db:5432/academic_db
+      - SECRET_KEY=clave_secreta_super_segura_para_compose_development_123456
+      - ALGORITHM=HS256
+      - ACCESS_TOKEN_EXPIRE_MINUTES=30
+      - REFRESH_TOKEN_EXPIRE_DAYS=7
+      - ENVIRONMENT=development
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - academic_network
+
+volumes:
+  postgres_data:
+    name: academic_postgres_data
+
+networks:
+  academic_network:
+    name: academic_network
