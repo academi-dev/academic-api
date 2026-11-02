@@ -1,11 +1,11 @@
 # Academic API 🎓
 
-[![CI/CD](https://img.shields.io/github/actions/workflow/status/academic-dev/academic-api/ci.yml?branch=main&style=for-the-badge&logo=github-actions&logoColor=white&label=CI%2FCD)](https://github.com/academic-dev/academic-api)
+[![CI/CD](https://img.shields.io/github/actions/workflow/status/academic-dev/academic-api/ci.yml?branch=main&style=for-the-badge&logo=github-actions&logoColor=white&label=CI%2FCD)](https://github.com/academi-dev/academic-api)
 [![Python](https://img.shields.io/badge/Python-3.15-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![Licencia MIT](https://img.shields.io/badge/Licencia-MIT-green.svg?style=for-the-badge)](LICENSE)
-[![Último Commit](https://img.shields.io/github/last-commit/academic-dev/academic-api?style=for-the-badge&logo=git&logoColor=white)](https://github.com/academic-dev/academic-api/commits/main)
+[![Último Commit](https://img.shields.io/github/last-commit/academic-dev/academic-api?style=for-the-badge&logo=git&logoColor=white)](https://github.com/academi-dev/academic-api/commits/main)
 
 **Academic API** es el servicio central RESTful del ecosistema **Academic**, diseñado para la gestión integral de materias, tareas y usuarios en entornos universitarios. Provee una arquitectura modular de alto rendimiento, autenticación robusta mediante JSON Web Tokens (JWT) con control de acceso basado en roles (RBAC) y persistencia relacional con PostgreSQL.
 
@@ -292,11 +292,11 @@ Este proyecto es desarrollado y mantenido por:
       <a href="https://github.com/hilton45">@hilton45</a>
     </td>
     <td align="center">
-      <a href="https://github.com/Eyfer3174">
-        <img src="https://github.com/Eyfer3174.png" width="100px;" alt="Eyfer Mena" style="border-radius:50%;"/><br />
+      <a href="https://github.com/eyfer3174-commits-commits">
+        <img src="https://github.com/eyfer3174-commits-commits.png" width="100px;" alt="Eyfer Mena" style="border-radius:50%;"/><br />
         <sub><b>Eyfer Mena</b></sub>
       </a><br />
-      <a href="https://github.com/Eyfer3174">@Eyfer3174</a>
+      <a href="https://github.com/eyfer3174-commits-commits">@eyfer3174-commits</a>
     </td>
   </tr>
 </table>
